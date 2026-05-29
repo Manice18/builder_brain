@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "tsc -p tsconfig.json",
+    "build": "rm -rf dist && esbuild src/server.ts --bundle --platform=node --format=esm --outfile=dist/server.js --packages=external",
     "start": "node dist/server.js",
     "check": "tsc -p tsconfig.json --noEmit"
   },
@@ -21,6 +21,7 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^25.9.1",
+    "esbuild": "^0.28.0",
     "tsx": "^4.22.3",
     "typescript": "^6.0.3"
   }

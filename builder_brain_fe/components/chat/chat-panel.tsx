@@ -16,7 +16,6 @@ const SUGGESTIONS = [
   "What projects have I abandoned?",
   "Which repos are stale but still in my notes?",
   "Show recent activity on my repositories",
-  "Can you summarize the content of AI Agent Ideas of notion?",
 ];
 
 const STOPPED_SUFFIX = "\n\n---\n*Response stopped.*";

@@ -1,5 +1,7 @@
 # BuilderBrain
 
+![UI](ui-image.png "UI IMAGE")
+
 As a dev we always have a lot of incomplete projects, untracked works, forgotten notes in the ocean of notion pages. So I thought for my personal use I'll build a personal **project memory** assistant that connects **GitHub** (what you code) with **Notion** (what you plan). BuilderBrain answers natural-language questions by querying live data through [Coral](https://github.com/withcoral/coral) SQL, then optionally narrates results with an LLM.
 
 **Coral is the source of truth.** OpenRouter is used only to summarize structured query results — it never invents repos, pages, or activity.
